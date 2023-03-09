@@ -1,8 +1,12 @@
 def twoSum(nums, target):
-    ans = list()
+    n = list()
+    m = list()
 
     for i in range(len(nums)):
-        if target - nums[i] in nums:
-            ans = [nums.index(target - nums[i]), i]
+        key = target - nums[i]
+        m = nums[i + 1:]
+        if key in m:
+            n = [i, m.index(key) + i + 1]
+            break
 
-    return ans
+    return ns
