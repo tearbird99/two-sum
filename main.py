@@ -9,4 +9,4 @@ def twoSum(nums, target):
             n = [i, m.index(key) + i + 1]
             break
 
-    return ns
+    return n
